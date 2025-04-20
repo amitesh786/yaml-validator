@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAML Validator</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Upload and Validate YAML</h2>
+
+    <form id="yamlForm">
+      <div class="d-flex justify-content-center">
+        <input type="file" id="yamlFile" accept=".yaml,.yml" class="form-control w-50" />
+      </div>
+    </form>
+
+    <div id="result" class="mt-3 text-center"></div>
+
+    <div id="fileContent" class="mt-4 text-center">
+      <h4>File Content Preview:</h4>
+      <pre id="contentPreview" class="border p-3"></pre>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
