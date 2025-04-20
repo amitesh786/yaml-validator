@@ -9,12 +9,12 @@ A lightweight web tool to upload, view, and validate YAML files directly in the 
 - 🎨 Clean and responsive Bootstrap design.
 
 ## 📂 File Structure
-yaml-validator/
-├── index.html    # Main HTML page with UI
-├── index.js      # JavaScript for file reading and YAML validation
-├── style.css     # Custom styles (optional)
-├── favicon.gif   # (Optional) Favicon for tab
-└── README.md     # Documentation
+- yaml-validator/
+- ├── index.html           # Main HTML page with UI
+- ├── index.js             # JavaScript for file reading and YAML validation
+- ├── style.css            # Custom styles (optional)
+- ├── favicon.gif          # (Optional) Favicon for tab
+- └── README.md            # Documentation
 
 ## 🛠️ Technologies Used
 - HTML5, CSS3, Bootstrap – For layout and styling.
