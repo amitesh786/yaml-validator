@@ -1,6 +1,4 @@
-document.getElementById('yamlForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
+document.getElementById('validateBtn').addEventListener('click', function () {
   const fileInput = document.getElementById('yamlFile');
   const file = fileInput.files[0];
   const result = document.getElementById('result');
@@ -17,7 +15,7 @@ document.getElementById('yamlForm').addEventListener('submit', function(event) {
   }
 
   const reader = new FileReader();
-  reader.onload = function(e) {
+  reader.onload = function (e) {
     const content = e.target.result;
     fileContent.textContent = content;
 
