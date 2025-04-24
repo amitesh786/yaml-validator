@@ -60,3 +60,17 @@ document.getElementById('validateBtn').addEventListener('click', function () {
 
   reader.readAsText(file);
 });
+
+document.getElementById('resetBtn').addEventListener('click', function () {
+  const fileInput = document.getElementById('yamlFile');
+  const result = document.getElementById('result');
+  const fileContent = document.getElementById('contentPreview');
+  const fileList = document.getElementById('fileList');
+
+  fileInput.value = '';
+  result.textContent = '';
+  result.className = '';
+  fileContent.textContent = '';
+  fileList.innerHTML = '';
+  fileList.classList.add('d-none');
+});
