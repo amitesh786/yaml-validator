@@ -39,7 +39,7 @@ A lightweight web tool to upload, view, and validate YAML files directly in the 
     - `cd yaml-validator`
 - Open `index.html` in your browser.
 
-👨‍💻 Author
-Amitesh Singh – [GitHub](https://github.com/amitesh786/yaml-validator.git)
+## 👨‍💻 Author
+- Amitesh Singh – [GitHub](https://github.com/amitesh786/yaml-validator.git)
 
-Feel free to contribute or suggest improvements! 🙌
+- Feel free to contribute or suggest improvements! 🙌
