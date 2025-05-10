@@ -1,12 +1,13 @@
 # YAML Validator
-A lightweight web tool to upload, view, and validate `YAML` files directly in the browser using JavaScript `(js-yaml)` and a clean Bootstrap UI.
+A lightweight, client-side web tool to upload, view, and validate YAML files directly in the browser using `js-yaml` and a responsive Bootstrap-based UI.
 
 ## Features
-- Upload `.yaml` or `.yml` files via file picker.
-- Syntax validation using `js-yaml`.
-- YAML content preview with error messages.
-- Fast, client-side validation.
-- Clean and responsive Bootstrap design.
+- Upload `.yaml` or `.yml` files via a file picker.
+- Instant syntax validation using `js-yaml`.
+- Live preview of parsed YAML content.
+- Fast, 100% client-side validation (no server calls).
+- Responsive, clean UI powered by Bootstrap.
+- Clear error messages for invalid YAML.
 
 ## File Structure
 - yaml-validator/
