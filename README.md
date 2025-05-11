@@ -14,7 +14,7 @@ A lightweight, client-side web tool to upload, view, and validate YAML files dir
 - ├── index.html           # Main HTML page with UI
 - ├── index.js             # JavaScript for file reading and YAML validation
 - ├── style.css            # Custom styles (optional)
-- ├── favicon.gif          # (Optional) Favicon for tab
+- ├── favicon.gif          # Tab icon (optional)
 - └── README.md            # Documentation
 
 ## Technologies Used
