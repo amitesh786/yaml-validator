@@ -1,5 +1,5 @@
 # YAML Validator
-A lightweight, client-side web tool to upload, view, and validate YAML files directly in the browser using `js-yaml` and a responsive Bootstrap-based UI.
+Validate and preview YAML files in your browser—quickly and offline.
 
 ## Features
 - Upload `.yaml` or `.yml` files via a file picker.
@@ -18,27 +18,30 @@ A lightweight, client-side web tool to upload, view, and validate YAML files dir
 - └── README.md            # Documentation
 
 ## Technologies Used
-- `HTML5`, `CSS3`, `Bootstrap` – For layout and styling.
-- JavaScript (`js-yaml`) – To parse and validate YAML.
-- FileReader API – To read uploaded files client-side.
+- **HTML5**, **CSS3**, **Bootstrap** – For responsive layout and design.
+- **JavaScript**, [`js-yaml`](https://github.com/nodeca/js-yaml) – For YAML parsing and syntax validation.
+- **FileReader API** – To read files directly in the browser.
 
 ## How to Use
-- Open `index.html` in your browser.
-- Upload a `.yaml` or `.yml` file.
-- View parsed `YAML` content and see validation result instantly.
-- Errors (if any) are displayed clearly below the file input.
+1. Open `index.html` in your browser.
+2. Click the file input to upload a `.yaml` or `.yml` file.
+3. Instantly view parsed YAML content below.
+4. Any syntax errors will be shown clearly.
 
 ## Validation Logic
-- Syntax Validation: Uses `js-yaml` to detect formatting or indentation issues.
+- **Syntax validation**: Handled by `js-yaml`, catching format and indentation issues.
+- **Error highlighting**: Clearly displayed below the file input if parsing fails.
 
 ## Demo
-![Validate Demo YAML](Validate-YAML.gif)
+![Demo of YAML validation tool interface showing file upload and live preview](Validate-YAML.gif)
+*A quick preview of how YAML files are validated and displayed.*
 
 ## Developer Setup
+To run locally:
 - Clone the repository:
     - `git clone https://github.com/amitesh786/yaml-validator.git`
     - `cd yaml-validator`
-- Open `index.html` in your browser.
+- Open `index.html` in your browser.    # Or double-click it
 
 ## Author
 - Amitesh Singh – [GitHub](https://github.com/amitesh786/yaml-validator.git)
