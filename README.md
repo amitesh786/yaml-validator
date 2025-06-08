@@ -1,5 +1,5 @@
 # YAML Validator
-Validate and preview YAML files in your browser—quickly and offline.
+Fast, offline `YAML` file validation and preview in your browser.
 
 ## Features
 - Upload `.yaml` or `.yml` files via a file picker.
