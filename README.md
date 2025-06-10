@@ -33,7 +33,7 @@ Fast, offline `YAML` file validation and preview in your browser.
 - **Error highlighting**: Clearly displayed below the file input if parsing fails.
 
 ## Demo
-![Demo of YAML validation tool interface showing file upload and live preview](Validate-YAML.gif)
+![Demo of YAML validation](Validate-YAML.gif)
 *A quick preview of how YAML files are validated and displayed.*
 
 ## Developer Setup
