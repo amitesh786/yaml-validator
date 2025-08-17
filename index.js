@@ -12,6 +12,19 @@ result.textContent = '';
 result.className = '';
 fileContent.textContent = '';
 
+const showToast = (message, type = 'primary') => {
+    const toastEl = document.getElementById('toastMessage');
+    const toastBody = toastEl.querySelector('.toast-body');
+
+    toastBody.textContent = message;
+    toastEl.className = `toast align-items-center text-bg-${type} border-0`;
+
+    const toast = new bootstrap.Toast(toastEl, {
+        delay: 5000
+    });
+    toast.show();
+}
+
 document.getElementById('yamlFile').addEventListener('change', function () {
   const fileInput = this;
   const file = fileInput.files[0];
@@ -50,6 +63,7 @@ document.getElementById('validateBtn').addEventListener('click', function () {
   if (!file) {
     result.textContent = 'Please select a YAML file.';
     result.className = 'text-warning';
+    showToast('Please select a YAML file.', 'warning');
     return;
   }
 
@@ -62,14 +76,16 @@ document.getElementById('validateBtn').addEventListener('click', function () {
       const data = jsyaml.load(content);
 
       if (!data || typeof data !== 'object') {
-        throw new Error("YAML is empty or has an invalid structure.");
+        showToast('YAML is empty or has an invalid structure.', 'danger');
       }
 
       result.textContent = 'YAML is valid ✅';
       result.className = 'text-success';
+      showToast('YAML is valid.', 'success');
     } catch (err) {
       result.textContent = 'Invalid YAML ❌: ' + err.message;
       result.className = 'text-danger';
+      showToast('Invalid YAML.', 'danger');
     }
   };
 
@@ -90,4 +106,5 @@ const resetAll = () => {
   validateBtnClass.disabled = true;
   resetBtnClass.disabled = true;
   fileContentId.classList.add('d-none');
+  showToast('Reset all fields.', 'success');
 }
